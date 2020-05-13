@@ -1,5 +1,7 @@
 class UsersController < ApplicationController
   def new; end
 
-  def create; end
+  def create
+    fail
+  end
 end

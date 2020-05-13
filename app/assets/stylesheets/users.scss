@@ -12,7 +12,7 @@ form {
   border-radius: 10px;
 }
 
-form input[type=text] {
+input[type=text], input[type=password], input[type=email] {
   border-radius: 5px;
 }
 
