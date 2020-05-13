@@ -1,9 +1,9 @@
 # Reddit
-> A mini reddit clone to run on terminal.<br>
+> A example of form.<br>
 
 ![screenshot](screenshot.png)
 
-<br>This project consists of using Ruby On Rails to build a mini blog post system, based on command line. The application allows users to create posts and make comments.
+<br>This project consists of using Ruby On Rails to build a form, using your web browser to interact with a database.
 <br>
 
 ## Content
