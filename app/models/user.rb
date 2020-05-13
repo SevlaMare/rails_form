@@ -11,9 +11,7 @@ class User < ApplicationRecord
     uniqueness: { case_sensitive: false },
     format: { with: valid_email }
 
-  strong_pass = /+
   validates 'password',
     presence: true,
     length: { in: 6..22 },
-    format: { with: strong_pass }
 end
