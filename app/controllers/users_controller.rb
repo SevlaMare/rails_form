@@ -20,12 +20,15 @@ class UsersController < ApplicationController
 
   # Edit on database
   def update
-    @user = User.find(params[:id])
-    @user.update(user_params)
+    @db_line = User.find(params[:id])
+    @db_line.update(user_params)
+    redirect_to edit_user_path(@db_line)
   end
 
   private
   def user_params
-    params.require(:user).permit(:username, :email, :password)
+    params
+      .require(:user)
+      .permit(:username, :email, :password)
   end
 end
