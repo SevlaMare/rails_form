@@ -61,7 +61,7 @@ Now you can go to your favorite web browser like Google Crome and access the url
 To edit this user, go to:
 <br> http://localhost:3000/users/1/edit
 
-Where 1 is the id, on the order you create the users
+Where 1 is the id, with same order as you create the users
 
 ### Contributing
 
