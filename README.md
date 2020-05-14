@@ -3,8 +3,7 @@
 
 ![screenshot](screenshot.png)
 
-<br>This project consists of using Ruby On Rails to build a form, using your web browser to interact with a database.
-<br>
+<br>This project consists of using Ruby On Rails to build a form to create and edit a user<br>
 
 ## Content
 
@@ -19,9 +18,10 @@
 ## Features
 
 <ul>
-  <li>The model has Authors, Posts and comments</li>
-  <li>The tables has the correct relationships</li>
-  <li>The inputs are checked for basic validations</li>
+  <li>The only model is User</li>
+  <li>You can create and edit users</li>
+  <li>It has validations to create and edit</li>
+  <li>A message is show if one of the validations is not fulfilled</li>
 </ul>
 
 ## Built With
@@ -31,9 +31,6 @@
 - Rubocop (Linter) with Stickler (CI Tool) <br>
 - Git, Github and VScode <br>
 
-## ERM Diagram
-
-![screenshot](diagram.png)
 
 ## Getting Start
 
@@ -47,7 +44,7 @@ To use this program, you will need install:
 #### Get a local copy
 Now you need a copy of this application, if you are using Git:
 ```js
-git clone git@github.com:SevlaMare/reddit.git
+git clone git@github.com:SevlaMare/rails_form.git
 ```
 Otherwise just hit (Download Zip) on green button (Clone or Download) at top of this page.
 
@@ -57,57 +54,14 @@ To run, from the application folder, just type on terminal:
 ```js
 rails server
 ```
-Now you can go to your favorite web browser like Google Crome
-<br>and go to this page: http://localhost:3000/
+Now you can go to your favorite web browser like Google Crome and access the url
+<br> http://localhost:3000/users/new
+<br>There you can create a user
 
-#### Use examples
+To edit this user, go to:
+<br> http://localhost:3000/users/1/edit
 
-
-```js
-rails console
-```
-##### To insert some data:
-We can create an author
-```js
-x = Author.create(username: "userA", email: "abc@email.com", password: "password123")
-```
-
-Make a post
-```js
-x.posts.create(title: "new post", body: "this is a post")
-```
-
-Make a comment
-```js
-Post.first.comments.create(body: "some text", user_id: 1)
-```
-
-##### You can query some values, like:
-
-retrieve a user
-```js
-user1 = Author.find(1)
-```
-
-check his first comment
-```js
-c1 = user1.comments.first
-```
-
-see comments that belongs to this author
-```js
-c1.author
-```
-can do the same for posts:
-```js
-p1 = Post.first
-p1.comments.first
-c1.post
-```
-to leave
-```js
-exit
-```
+Where 1 is the id, on the order you create the users
 
 ### Contributing
 
