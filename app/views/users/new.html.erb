@@ -1,15 +1,18 @@
-<form accept-charset="UTF-8" action="/users" method="POST">
+<form accept-charset="UTF-8" action="/users" method="post">
   <input type="hidden" name="authenticity_token" 
     value="<%= form_authenticity_token %>">
 
-  <label for="username_input">Username </label>
-  <input id="username_input" type="text" name="username_input"><br><br>
+  <label for="username">Username </label>
+  <input id="username" type="text" 
+    name="user[username]" placeholder="nick"><br><br>
 
-  <label for="email_input">Email </label>
-  <input id="email_input" type="email" name="email_input"><br><br>
+  <label for="email">Email </label>
+  <input id="email" type="email" 
+    name="user[email]" placeholder="email@host.com"><br><br>
 
-  <label for="pass_input">Password </label>
-  <input id="pass_input" type="password" name="pass_input"><br><br>
+  <label for="password">Password </label>
+  <input id="password" type="password" 
+    name="user[password]" placeholder="******"><br><br>
 
   <input type="submit" value="Submit" class="btn-submit">
 </form>
