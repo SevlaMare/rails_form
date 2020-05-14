@@ -1,5 +1,5 @@
-# Reddit
-> A example of form.<br>
+# Re-former
+> A example of form using Rails.<br>
 
 ![screenshot](screenshot.png)
 
