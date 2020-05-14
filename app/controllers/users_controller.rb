@@ -1,10 +1,13 @@
 class UsersController < ApplicationController
   def new
+    # rails reflection
+    # check which fields the form has
     # @user = User.new
   end
 
   def create
     # fail
+
     @user = User.new(
       username: params[:user][:username],
       email: params[:user][:email],
