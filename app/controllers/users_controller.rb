@@ -13,8 +13,18 @@ class UsersController < ApplicationController
     end
   end
 
-  private
+  # Render view
+  def edit
+    @user = User.find(params[:id])
+  end
 
+  # Edit on database
+  def update
+    @user = User.find(params[:id])
+    @user.update(user_params)
+  end
+
+  private
   def user_params
     params.require(:user).permit(:username, :email, :password)
   end

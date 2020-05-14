@@ -1,11 +1,3 @@
-<%= form_for @user do |f| %>
-  YOUR USERNAME:  <%= f.text_field :username , placeholder: 'example'%> <br><br/>
-  YOUR EMAIL HERE:  <%= f.email_field :email , placeholder: 'email@gmail.com'%> <br><br/>
-  CHOOSE PASSWORD:  <%= f.password_field :password %> <br><br/>
-  <%= f.submit %>
-<% end %>
-
-
 <%# <form accept-charset="UTF-8" action="/users" method="POST">
   <input type="hidden" name="authenticity_token" 
   value="<%= form_authenticity_token ">
@@ -40,3 +32,16 @@
   <%= submit_tag("create") %>
 <% end %>
 -->
+
+<%= form_for @user do |f| %>
+  YOUR USERNAME:  <%= f.text_field :username ,placeholder: 'example'%>
+  <br><br/>
+
+  YOUR EMAIL HERE:  <%= f.email_field :email , placeholder: 'email@gmail.com'%>
+  <br><br/>
+
+  CHOOSE PASSWORD:  <%= f.password_field :password %>
+  <br><br/>
+
+  <%= f.submit %>
+<% end %>
