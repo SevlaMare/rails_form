@@ -1,1 +1,16 @@
 <p> teste 1 </p>
+
+<form action="/users" method="post" accept-charset="UTF-8" >
+  
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="user[username]"><br><br>
+  
+  <label for="email">E-mail:</label>
+  <input type="email" id="email" name="user[email]"><br><br>
+  
+  <label for="pass-word">Password:</label>
+  <input type="password" id="pass-word" name="user[password]"><br><br>
+
+  # <input type="submit" value="Submit">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" >
+</form>
