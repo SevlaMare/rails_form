@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def new
-    @user = User.new
+    # @user = User.new
   end
 
   def create
@@ -12,10 +12,10 @@ class UsersController < ApplicationController
     )
 
     if @user.save
-      puts 'save successful'
+      puts 'SAVE SUCCESSFUL'
       redirect_to new_user_path
     else
-      puts 'is not saved'
+      puts 'IS NOT SAVED'
       render :new
     end
   end
