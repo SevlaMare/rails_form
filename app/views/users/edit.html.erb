@@ -1,0 +1,21 @@
+<%= form_for @user do |f| %>
+  <ul>
+    <% @user.errors.full_messages.each do |errorX| %>
+      <li><%= errorX %></li>
+    <% end %>
+  </ul>
+
+  YOUR USERNAME:
+  <%= f.text_field :username ,placeholder: 'example'%>
+  <br><br/>
+
+  YOUR EMAIL HERE:
+  <%= f.email_field :email , placeholder: 'email@gmail.com'%>
+  <br><br/>
+
+  CHOOSE PASSWORD:
+  <%= f.password_field :password %>
+  <br><br/>
+
+  <%= f.submit %>
+<% end %>
